@@ -6,3 +6,6 @@ RUN apt-get update                 && \
         --no-install-recommends -y    \
         texlive-full               && \
     apt-get clean
+
+WORKDIR /data
+VOLUME ["/data"]
